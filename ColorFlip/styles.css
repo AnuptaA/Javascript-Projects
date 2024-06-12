@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Press Start 2P", "Open Sans", Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: grey;
+}
+
+nav {
+  background-color: white;
+  color: #cf9fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  position: fixed;
+  width: 100%;
+}
+
+.logo,
+.logo b {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a {
+  color: #cf9fff;
+}
+
+nav a:hover {
+  color: purple;
+  transition: all 0.3s ease 0s;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cf9fff;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+main ul li {
+  list-style-type: none;
+}
+
+.color-button {
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  color: #cf9fff;
+  background-color: white;
+}
+
+.curr-color {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
