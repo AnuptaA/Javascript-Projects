@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main>
+      <div class="gen-cont">
+        <div class="title-cont"><h1>Password Generator</h1></div>
+        <div class="len-cont">
+          <p>Password Length:</p>
+          <input type="range" min="4" max="30" value="17" id="len-slider" />
+        </div>
+        <div class="specs-cont">
+          <p>The password can contain:</p>
+          <div class="checks-cont">
+            <input type="checkbox" id="upper-allowed" value="uppercase" />
+            <label for="upper-allowed">Uppercase characters (A-Z)</label>
+            <input type="checkbox" id="lower-allowed" value="lowercase" />
+            <label for="lower-allowed">Lowercase characters (a-z)</label>
+            <input type="checkbox" id="numbers-allowed" value="number" />
+            <label for="numbers-allowed">Numerical characters (0-9)</label>
+            <input type="checkbox" id="numbers-allowed" value="special" />
+            <label for="numbers-allowed"
+              >Special characters ([]$&+,:;=?@#|'<>.-^*()%!)</label
+            >
+            <input type="checkbox" id="spaces-allowed" value="space" />
+            <label for="numbers-allowed">Spaces ( )</label>
+            <input type="checkbox" id="duplicates-allowed" value="duplicate" />
+            <label for="duplicates-allowed">Duplicate Characters</label>
+          </div>
+        </div>
+        <div class="gen-button">
+          <button class="generate">Generate Password</button>
+        </div>
+        <div class="pass-cont">
+          <input type="text" class="copy-link-input" value="password" />
+          <button><span class="material-icons">content_copy</span></button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
