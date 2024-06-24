@@ -21,20 +21,36 @@
         <div class="specs-cont">
           <p>The password can contain:</p>
           <div class="checks-cont">
-            <input type="checkbox" id="upper-allowed" value="uppercase" />
-            <label for="upper-allowed">Uppercase characters (A-Z)</label>
-            <input type="checkbox" id="lower-allowed" value="lowercase" />
-            <label for="lower-allowed">Lowercase characters (a-z)</label>
-            <input type="checkbox" id="numbers-allowed" value="number" />
-            <label for="numbers-allowed">Numerical characters (0-9)</label>
-            <input type="checkbox" id="numbers-allowed" value="special" />
-            <label for="numbers-allowed"
-              >Special characters ([]$&+,:;=?@#|'<>.-^*()%!)</label
-            >
-            <input type="checkbox" id="spaces-allowed" value="space" />
-            <label for="numbers-allowed">Spaces ( )</label>
-            <input type="checkbox" id="duplicates-allowed" value="duplicate" />
-            <label for="duplicates-allowed">Duplicate Characters</label>
+            <div class="check-item">
+              <input type="checkbox" id="upper-allowed" value="uppercase" />
+              <label for="upper-allowed">Uppercase characters (A-Z)</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="lower-allowed" value="lowercase" />
+              <label for="lower-allowed">Lowercase characters (a-z)</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="numbers-allowed" value="number" />
+              <label for="numbers-allowed">Numerical characters (0-9)</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="special-allowed" value="special" />
+              <label for="special-allowed"
+                >Special characters ([]$&+,:;=?@#|'<>.-^*()%!)</label
+              >
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="spaces-allowed" value="space" />
+              <label for="spaces-allowed">Spaces ( )</label>
+            </div>
+            <div class="check-item">
+              <input
+                type="checkbox"
+                id="duplicates-allowed"
+                value="duplicate"
+              />
+              <label for="duplicates-allowed">Duplicate Characters</label>
+            </div>
           </div>
         </div>
         <div class="gen-button">
