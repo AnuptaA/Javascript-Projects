@@ -38,12 +38,44 @@ body {
   width: 90%;
 }
 
+#len-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: #efbbff;
+  height: 8px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#len-slider:hover {
+  opacity: 1;
+}
+
+#len-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  background: #be29ec;
+  cursor: pointer;
+}
+
+#len-slider::-moz-range-thumb {
+  width: 10px;
+  height: 25px;
+  background: #be29ec;
+  cursor: pointer;
+}
+
 .len-text {
-    display: flex;
+  display: flex;
 }
 
 #current-length {
-    padding-left: 1%;
+  padding-left: 1%;
 }
 
 .len-cont input,
@@ -110,5 +142,5 @@ body {
 }
 
 .copy-link-input:hover {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
