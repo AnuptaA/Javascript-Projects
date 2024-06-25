@@ -13,35 +13,42 @@
   <body>
     <main>
       <div class="gen-cont">
-        <div class="title-cont"><h1>Password Generator</h1></div>
+        <div class="title-cont">
+          <h1>Password Generator</h1>
+          <div class="title-bar"></div>
+        </div>
         <div class="len-cont">
-          <p>Password Length:</p>
+          <div class="len-text">
+            <p>Password Length:</p>
+            <span id="current-length">17</span>
+          </div>
           <input type="range" min="4" max="30" value="17" id="len-slider" />
         </div>
         <div class="specs-cont">
-          <p>The password can contain:</p>
-          <div class="checks-cont">
-            <div class="check-item">
-              <input type="checkbox" id="upper-allowed" value="uppercase" />
-              <label for="upper-allowed">Uppercase characters (A-Z)</label>
-            </div>
+          <p>The password must contain:</p>
+          <div class="checks-cont-1">
             <div class="check-item">
               <input type="checkbox" id="lower-allowed" value="lowercase" />
-              <label for="lower-allowed">Lowercase characters (a-z)</label>
+              <label for="lower-allowed">Lowercase characters</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="upper-allowed" value="uppercase" />
+              <label for="upper-allowed">Uppercase characters</label>
             </div>
             <div class="check-item">
               <input type="checkbox" id="numbers-allowed" value="number" />
-              <label for="numbers-allowed">Numerical characters (0-9)</label>
+              <label for="numbers-allowed">Numerical characters</label>
             </div>
             <div class="check-item">
               <input type="checkbox" id="special-allowed" value="special" />
-              <label for="special-allowed"
-                >Special characters ([]$&+,:;=?@#|'<>.-^*()%!)</label
-              >
+              <label for="special-allowed">Special characters</label>
             </div>
+          </div>
+          <p>The password can contain:</p>
+          <div class="checks-cont-2">
             <div class="check-item">
               <input type="checkbox" id="spaces-allowed" value="space" />
-              <label for="spaces-allowed">Spaces ( )</label>
+              <label for="spaces-allowed">Spaces</label>
             </div>
             <div class="check-item">
               <input
@@ -57,8 +64,15 @@
           <button class="generate">Generate Password</button>
         </div>
         <div class="pass-cont">
-          <input type="text" class="copy-link-input" value="password" />
-          <button><span class="material-icons">content_copy</span></button>
+          <input
+            type="text"
+            class="copy-link-input"
+            value="To be generated..."
+            readonly
+          />
+          <button class="copy-button">
+            <span class="material-icons">content_copy</span>
+          </button>
         </div>
       </div>
     </main>

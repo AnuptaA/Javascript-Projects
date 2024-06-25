@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", Helvetica, sans-serif, Arial;
+  font-size: 15px;
+  color: #660066;
+  font-weight: 500;
 }
 
 body {
@@ -11,10 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: linear-gradient(180deg, #7df9ff, #be29ec);
 }
 
 .gen-cont {
-  width: 60%;
+  width: 80%;
   max-height: 80vh;
   position: relative;
   display: flex;
@@ -23,39 +27,88 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #bac7d8;
+  background-color: white;
   border-radius: 15px;
   padding: 2% 0;
   overflow: auto;
 }
 
 .gen-cont div {
-  padding: 2% 0;
+  padding: 1% 0;
   width: 90%;
 }
 
+.len-text {
+    display: flex;
+}
+
+#current-length {
+    padding-left: 1%;
+}
+
 .len-cont input,
-.gen-button button,
 .pass-cont input,
 .pass-cont button {
   width: 100%;
+  color: purple;
 }
 
-.checks-cont {
+.title-cont h1 {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #be29ec;
+  border-width: 3.5px;
+}
+
+.checks-cont-1,
+.checks-cont-2,
+.gen-button {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-grow: 2;
-  justify-content: space-between;
 }
 
-/* .check-item {
-  width: 20%;
-  display: flex;
-  align-items: center;
-} */
+.check-item {
+  flex-basis: 45%;
+}
+
+.generate {
+  width: 40%;
+  padding: 1% 0;
+  color: purple;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #efbbff;
+  cursor: pointer;
+}
 
 .pass-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.copy-link-input,
+.pass-cont button {
+  height: 40px;
+  border: none;
+}
+
+.pass-cont button {
+  width: 20%;
+  background-color: #d896ff;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+
+.copy-link-input {
+  padding-left: 2%;
+  border: 1px solid grey;
+}
+
+.copy-link-input:hover {
+    background-color: #dddddd;
 }
